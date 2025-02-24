@@ -5,7 +5,7 @@ import { PrimaryButtonComponent } from '../primary-button/primary-button.compone
   selector: 'app-header',
   imports: [PrimaryButtonComponent],
   template: `
-    <div class="bg-slate-100 px-4 py-3 shadow-md">
+    <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
       <span>My store </span>
       <app-primary-button />
     </div>
