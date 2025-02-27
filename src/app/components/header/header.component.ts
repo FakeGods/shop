@@ -7,13 +7,9 @@ import { PrimaryButtonComponent } from '../primary-button/primary-button.compone
   template: `
     <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between">
       <span>My store </span>
-      <app-primary-button label="Cart" (btnClicked)="(showButtonClicked)" />
+      <app-primary-button label="Cart" />
     </div>
   `,
   styles: ``,
 })
-export class HeaderComponent {
-  showButtonClicked() {
-    console.log('clicked');
-  }
-}
+export class HeaderComponent {}
