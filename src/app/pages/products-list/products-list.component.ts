@@ -8,5 +8,10 @@ import { Product } from '../../models/products.model';
   styleUrl: './products-list.component.css',
 })
 export class ProductsListComponent {
-  products = signal<Product[]>([{}]);
+  products = signal<Product[]>([{
+    id: 1,
+    title: 'Kiebab'
+    price: 109.95,
+    image: ''
+  }]);
 }
