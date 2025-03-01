@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { Product } from '../../models/products.model';
 
 @Component({
@@ -8,10 +8,12 @@ import { Product } from '../../models/products.model';
   styleUrl: './products-list.component.css',
 })
 export class ProductsListComponent {
-  products = signal<Product[]>([{
-    id: 1,
-    title: 'Kiebab'
-    price: 109.95,
-    image: ''
-  }]);
+  products = signal<Product[]>([
+    {
+      id: 1,
+      title: 'Kiebab',
+      price: 109,
+      image: '',
+    },
+  ]);
 }
